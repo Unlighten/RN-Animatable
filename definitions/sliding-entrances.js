@@ -1,7 +1,7 @@
 function makeSlideInTranslation(translationType, fromValue) {
   return {
     from: {
-      [translationType]: 0,
+      [translationType]: fromValue,
     },
     to: {
       [translationType]: 0,
@@ -9,7 +9,7 @@ function makeSlideInTranslation(translationType, fromValue) {
   };
 }
 
-export const slideInDown = makeSlideInTranslation('translateY', -50);
+export const slideInDown = makeSlideInTranslation('translateY', -20);
 
 export const slideInUp = makeSlideInTranslation('translateY', 100);
 
